@@ -1,0 +1,123 @@
+$white: #FFFFFF;
+$yellow : #ffeb3b;
+$voilet : #7b42a7;
+$border : #484848;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+page-home {
+font-family: 'Roboto', sans-serif!important;
+
+.toolbar-background { 
+background-image: url(../assets/imgs/background.png)!important;
+ background-size: cover; 
+ background-position: center center;
+  background-repeat: no-repeat;
+    }
+	
+.body-img{
+	background: url(../assets/imgs/background.png);
+	 background-size: cover; 
+ background-position: center center;
+  background-repeat: no-repeat; 
+
+  .section1{
+  background: url(../assets/imgs/al_ablum_bg_image.png);
+   background-size: cover; 
+ background-position: center center;
+  background-repeat: no-repeat; 
+  }
+
+}
+  ion-title .toolbar-title{
+  color: $white!important; 
+  text-align:center;
+
+  }
+  .custom {
+  font-size: 33px;
+  color : $white;
+}
+ion-content{
+	.music-img{
+
+   
+    ion-img{
+    background: transparent;
+
+
+    img{
+    border-radius: 68px;
+    }
+    }
+
+    .mini-cus{
+    color: $white!important;
+    .num{
+    margin-left:6px;
+    }
+
+    }
+
+    .mini-cus-lite{
+        color: #FFFFFF !important;
+    font-size: 20px;
+    margin-left: 3px;
+	}
+	.mini-cus-lite:hover{
+	 color: $yellow!important;
+
+	}
+    .rate-text{
+    color: $white!important;
+
+    }
+	}
+	.music-con{
+
+	color: $white!important; 
+	
+
+
+
+
+	}
+}
+     .custom-violet{
+      color: $voilet!important;
+    
+    }
+    .item-bg{
+    background-color:transparent;
+    }
+    .audio{
+    color: $white!important;
+    font-size:20px;
+    }
+    .border{
+    border-bottom:1px solid $border;
+    }
+    .badge-md{
+    	background-color: $voilet!important;
+
+    }
+    .nav{
+    	background: url(../assets/imgs/navigation_background.png);
+	 background-size: cover; 
+ background-position: center center;
+  background-repeat: no-repeat; 
+
+  .menu-nav{
+  background:transparent;
+  color: $white;
+ 
+
+  .item-inner{
+   border-bottom:none;
+
+  }
+  }
+
+    }
+}
+

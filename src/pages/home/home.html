@@ -1,0 +1,150 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left #mycontent menuToggle>
+      <button ion-button >
+          <ion-icon name="reorder" class="custom" ></ion-icon>
+      </button>
+    </ion-buttons>
+     <ion-title center>
+      Audio List
+    </ion-title>
+    <ion-buttons right>
+      <button ion-button>
+         <ion-icon name="contact" class="custom"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="body-img">
+  <div class="section1">
+<ion-grid>
+  <ion-row>
+    <div class="music-img" >
+     <ion-img width="100px" height="100px" src="assets/imgs/music_album_image.png"></ion-img>
+     <ion-row>
+    <ion-col col-md-6 >
+          <ion-icon name="eye" class="mini-cus" > 50</ion-icon>
+    </ion-col>
+  <ion-col col-md-6>
+          <ion-icon name="heart-outline" class="mini-cus" > 25</ion-icon>
+   </ion-col>
+ </ion-row>
+ <h1 class="rate-text">4.5</h1>
+  <ion-row>
+     <ion-icon name="star-outline" class="mini-cus-lite" ></ion-icon>
+      <ion-icon name="star-outline" class="mini-cus-lite" ></ion-icon>
+       <ion-icon name="star-outline" class="mini-cus-lite" ></ion-icon>
+        <ion-icon name="star-outline" class="mini-cus-lite" ></ion-icon>
+         <ion-icon name="star-outline" class="mini-cus-lite" ></ion-icon>
+  </ion-row>
+    </div>
+     <ion-col col-md-11 padding-left class="music-con">
+      <h1>Audio name</h1>
+      <p>By author</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id ultrices sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam condimentum quam nec finibus lacinia. Vestibulum bibendum dictum nisi sit amet dictum. Etiam faucibus nunc id lectus mattis, </p>
+     </ion-col>
+  </ion-row>
+</ion-grid>
+<div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      <ion-icon name="musical-notes" class="custom-violet" ></ion-icon> <ion-badge item-end white> 260</ion-badge>
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      <ion-icon name="text" class="custom-violet" > <ion-badge item-end white> 260,500,00</ion-badge></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+
+</div>
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-item class="item-bg">
+   <div class="rate">
+    <ion-img width="500px" height="100px" src="assets/imgs/user_icon.png"></ion-img>
+
+    <h2>RATE THIS AUDIO</h2>
+     <ion-row>
+     <ion-icon name="star" class="mini-cus-lite" ></ion-icon>
+      <ion-icon name="star" class="mini-cus-lite" ></ion-icon>
+       <ion-icon name="star" class="mini-cus-lite" ></ion-icon>
+        <ion-icon name="star" class="mini-cus-lite" ></ion-icon>
+         <ion-icon name="star" class="mini-cus-lite" ></ion-icon>
+  </ion-row>
+
+   </div>
+
+    </ion-item>
+    ...
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item class="item-bg">
+     <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+         <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+         <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+         <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+         <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+         <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+         <ion-row padding class="border">
+      <ion-col col-xs-10 class="audio">
+       <ion-icon name="ios-musical-notes" class="custom-violet" left> </ion-icon> Audio
+     </ion-col>
+          <p>4.51</p>
+      </ion-row>
+    </ion-item>
+    ...
+  </ion-list>
+</div>
+</ion-content>
+
+
+
+<ion-menu [content]="mycontent">
+ <ion-content class="nav">
+    <ion-list>
+      <ion-item menuClose detail-none class="menu-nav"><ion-icon name="md-close" class="custom" > </ion-icon></ion-item>
+    </ion-list>
+    <ion-list>
+       <ion-item class="menu-nav"> Home</ion-item>
+        <ion-item class="menu-nav"> Audios</ion-item>
+        <ion-item class="menu-nav"> Articles</ion-item>
+        <ion-item class="menu-nav"> Video</ion-item>
+        <ion-item class="menu-nav"> Coaches</ion-item>
+        <ion-item class="menu-nav"> Contact US</ion-item>
+      </ion-list>
+  </ion-content>
+</ion-menu>
